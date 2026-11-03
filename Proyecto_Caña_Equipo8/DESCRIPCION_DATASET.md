@@ -35,15 +35,7 @@ Partición estratificada por grupos de similitud (`StratifiedGroupKFold`, semill
 | SCYLV | 395 | 99 |
 | **Total** | **1.851** | **460** |
 
-**Sesgo de captura detectado:** el tamaño de la imagen está asociado a la clase (por ejemplo, la mayoría de las fotos de Puccinia miden 780×1040 y las de SCYLV 493×1040). Un árbol de decisión que solo usa ancho y alto obtiene F1 macro de 0,48 en prueba, frente a 0,07 de la referencia. Ver la sección 10 del notebook.
-
-## Unidad de análisis y variables
-
-- Una observación: una fotografía.
-- Variables explicativas X: 44 medidas de color y textura calculadas por imagen.
-- Variable objetivo y: etiqueta de la carpeta, una de cinco categorías.
-- Las rutas, nombres de archivo, etiquetas y grupos no se usan como variables predictoras.
-- En la sección 10 se calculan las mismas 44 variables solo sobre la hoja segmentada (ExG + Otsu + morfología). No se utilizan máscaras de lesión ni mediciones de severidad.
+**Sesgo de captura detectado:** el tamaño de la imagen está asociado a la clase (por ejemplo, la mayoría de las fotos de Puccinia miden 780×1040 y las de SCYLV 493×1040). Un árbol de decisión que solo usa ancho y alto obtiene F1 macro de 0,48 en prueba, frente a 0,07 de la referencia (Sección 10 Notebook).
 
 ## Calidad y límites
 
